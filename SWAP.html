@@ -6,7 +6,9 @@
 <body>
 
 <p>Password: <input type="text" ,="" placeholder="Enter Password" id="Button"></p>
-<p><button onclick="myFunction()"><div id="myDIV">Hello</div></button></p>
+<p><button type="button" onclick="Visibility()"><div id="myDIV">SHOW</div></button></p>
+
+<p><button onclick="Eye()" onclick="Visibility()"><div id="myDIV">TRIGGER</div></button></p>
 
 <script>
 function Visibility() {
@@ -18,13 +20,11 @@ function Visibility() {
   }
 }
 
-function myFunction() {
+function Eye() {
   var x = document.getElementById("myDIV");
-  if (x.innerHTML === "Hello") {
-    x.innerHTML = "Swapped text!";
-  } else {
-    x.innerHTML = "Hello";
-  }
+  if (x.innerHTML === "HIDE") {
+  x.innerHTML = "SHOW";
+  } else {x.innerHTML = "HIDE";}
 }
 </script>
 
