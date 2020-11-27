@@ -5,15 +5,25 @@
 </head>
 <body>
 
-<p><button onclick="myFunction()"><div id="myDIV">HIDE</div></button></p>
+<p>Password: <input type="text" ,="" placeholder="Enter Password" id="Button"></p>
+<p><button onclick="myFunction()"><div id="myDIV">Hello</div></button></p>
 
 <script>
+function Visibility() {
+  var x = document.getElementById("Button");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
 function myFunction() {
   var x = document.getElementById("myDIV");
-  if (x.innerHTML === "HIDE") {
-    x.innerHTML = "SHOW";
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Swapped text!";
   } else {
-    x.innerHTML = "HIDE";
+    x.innerHTML = "Hello";
   }
 }
 </script>
