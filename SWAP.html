@@ -5,26 +5,16 @@
 </head>
 <body>
 
-<p>Password: <input type="text" ,="" placeholder="Enter Password" id="Button"></p>
-<p><button type="button" onclick="Visibility()"><div id="myDIV">SHOW</div></button></p>
-
-<p><button onclick="Eye()"><div id="myDIV">TRIGGER</div></button></p>
+<p><button onclick="myFunction()"><div id="myDIV">HIDE</div></button></p>
 
 <script>
-function Visibility() {
-  var x = document.getElementById("Button");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-
-function Eye() {
+function myFunction() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "HIDE") {
-  x.innerHTML = "SHOW";
-  } else {x.innerHTML = "HIDE";}
+    x.innerHTML = "SHOW";
+  } else {
+    x.innerHTML = "HIDE";
+  }
 }
 </script>
 
